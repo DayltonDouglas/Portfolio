@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio</title>
+    <link rel="shortcut icon" href="./Assets/Logo.jpg" />
+    <!--Main CSS-->
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <!--Main CSS-->
+    <link rel="stylesheet" type="text/css" href="/custom-1.css" />
+    <script
+      src="https://kit.fontawesome.com/b5db6cae14.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--Begin Header content-->
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="logo scale-in-ver-top">
+            <a href="#">d</a>
+          </div>
+
+          <div
+            onclick="abrir()"
+            id="open"
+            class="hamburger-btn slide-in-elliptic-top-fwd"
+          >
+            <span class="lines"></span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--End Header content-->
+    <!--Begin Nav-Menu Content-->
+    <nav class="nav-menu">
+      <div onclick="fechar()" class="close-nav-menu">&times;</div>
+      <div class="nav-menu-inner">
+        <ul>
+          <li><a href="#" class="inner-shadow active">Home</a></li>
+          <li><a href="#" class="outer-shadow hover-in-shadow">About Me</a></li>
+          <li><a href="#" class="outer-shadow hover-in-shadow">Contact</a></li>
+        </ul>
+      </div>
+      <p class="copyright-text">&copy; 2021 WebPortfólio Daylton Douglas</p>
+    </nav>
+    <!--End Nav-Menu Content-->
+    <!--Start effect-->
+    <div class="effect-wrap">
+      <div class="effect effect-1"></div>
+      <div class="effect effect-2"></div>
+    </div>
+    <!--End effect-->
+    <!--Start Home main section-->
+    <section id="formHeading" class="home-section section">
+      <div class="container">
+        <div class="row full-screen align-items-center">
+          <div class="home-text">
+            <p class="focus-in-expand-fwd">Hey, What's up</p>
+            <h2>I'm Daylton</h2>
+            <h1>Software Engineer</h1>
+          </div>
+          <div class="home-img">
+            <div class="img-box">
+              <img src="/Assets/Main.png" alt="Pic-for-my-profile" />
+            </div>
+          </div>
+          <div class="home-text">
+            <a href="#about" class="about-me vibrate-1">About me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End Home main section-->
+    <!--About me start section-->
+    <section class="about-section section" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2 data-heading="main info">More about me</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="about-img">
+            <div id="img-box">
+              <img src="./Assets/AboutMe.png" alt="Pic-About-Me" />
+            </div>
+            <!--My Social Links-->
+            <div class="social-links">
+              <a href="https://github.com/DayltonDouglas"
+                ><i style="color: black" class="fab fa-github"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/daylton-douglas-259345190/"
+                ><i style="color: blue" class="fab fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+          <div class="about-info">
+            <p>
+              <span
+                >Hello! My name is Daylton Douglas. I am a Software
+                Engineer.</span
+              ><br />
+              I started my career in programming in 2019, I soon became
+              interested in web development and tried to study more and more
+              about new methods and tools that emerge in the job market. On this
+              site I decided to put some of the works I've done and those I want
+              to work with.
+            </p>
+            <a href="./Assets/CV.pdf" class="btn-1">Download my CV</a>
+            <a href="#" class="btn-1">Hire Me</a>
+          </div>
+          <div class="container">
+            <h1>For example, check your zip code here:</h1>
+            <form>
+              <div class="form-group">
+                <label for="cep">ZIP CODE</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  maxlength="9"
+                  id="cep"
+                />
+                <small>00000-000</small>
+              </div>
+              <div class="form-group">
+                <label for="logradouro">ADDRESS</label>
+                <input type="text" class="form-control" id="logradouro" />
+                <small>Address</small>
+              </div>
+              <div class="form-group">
+                <label for="bairro">DISTRICT </label>
+                <input type="text" class="form-control" id="bairro" />
+                <small>District</small>
+              </div>
+              <div class="form-group">
+                <label for="localidade">CITY</label>
+                <input type="text" class="form-control" id="localidade" />
+                <small>City</small>
+              </div>
+              <div class="form-group">
+                <label for="uf">STATE</label>
+                <input type="text" class="form-control" id="uf" />
+                <small>State</small>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--About me end section-->
+
+    <script src="./main.js"></script>
+  </body>
+</html>
